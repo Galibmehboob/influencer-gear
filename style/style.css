@@ -199,6 +199,7 @@
 }
 
 .midl-btn {
+    gap: 6px;
     border: none;
     color: #E02C6D;
     font-size: 16px;
@@ -208,15 +209,4 @@
     left: 450px;
     top: 20px;
     background: none;
-}
-
-.arow-midl {
-    position: relative;
-    top: 1.5px;
-    padding-left: 5px;
-    width: 20px;
-    height: 20px;
-    transform: rotate(-90deg);
-
-
 }
