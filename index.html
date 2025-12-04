@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script>
+        function toggleMenu() {
+            document.getElementById("menu").classList.toggle("show");
+        }
+    </script>
 
 </head>
 
@@ -16,18 +20,26 @@
     <header>
         <nav class="navbar">
             <h3 class="nav-title">Influencer products</h3>
-            <ul class="nav-item">
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-item" id="menu">
+
                 <li>Home</li>
                 <li>Products</li>
                 <li>Sign up</li>
                 <li>Log In</li>
+
+
                 <div class="nav-icon">
                     <li><a href=""><img class="navicon" src="images/icons8-search-50.png" alt=""></a></li>
                     <li><a href=""><img class="navicon" src="images/icons8-cart.gif" alt=""></a></li>
                 </div>
             </ul>
         </nav>
-        <div class="first-cont">
+        <div class="first-cont ">
             <div class="first-con">
                 <h2 class="first-title">Start your Journey as
                     Influencer</h2>
@@ -37,13 +49,13 @@
                 <button class="first-btn">Prebook now <img class="arow" src="images/arrow button.png" alt="  "></button>
             </div>
             <div class="first-img">
-                <img src="images/Circle design.svg" alt="">
+                <img class="camera" src="images/Circle design.svg" alt="">
                 <img class="circle" src="images/main-camera.png" alt="">
             </div>
         </div>
 
 
-        <div class="sponsors">
+        <div class="sponsors hide">
             <hr class="fade-line">
             <img class="spon-img" src="logos/Alibaba.svg" alt="">
             <img class="spon-img" src="logos/Amazon.svg" alt="">
@@ -57,7 +69,7 @@
 
     </header>
     <main>
-        <div class="main-con">
+        <div class="main-con hide">
             <p style="font-size: 28px; font-weight: 500; height: 70px;">Popular Collection</p>
             <div class="main-content">
                 <div class="main-cards">
@@ -221,7 +233,7 @@
 
 
         </div>
-        <div class="last-content">
+        <div class="last-content hide">
             <div class="last-img">
                 <img src="images/gear.png" alt="">
             </div>
@@ -235,7 +247,7 @@
 
         </div>
     </main>
-    <footer class="footer">
+    <footer class="footer hide">
         <div class="footer-item">
             <div class="footer-para">
                 <h1 style="font-size: 24px;">Influencer products</h1>

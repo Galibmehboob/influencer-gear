@@ -297,3 +297,111 @@ footer {
     font-size: 14px;
     font-weight: 300;
 }
+
+/* hide to style */
+.hide {
+    display: none;
+}
+
+.hamburger {
+    width: 30px;
+    cursor: pointer;
+    display: none;
+    /* hidden on big screen */
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    background: #000;
+    margin: 6px 0;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+/* media query */
+@media screen and (max-width:576px) {
+
+    nav.navbar {
+        margin: 0;
+        max-width: 100%;
+        padding: 20px 0;
+        flex-direction: column;
+    }
+
+    .nav-title {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .nav-item {
+        display: none;
+        /* hide normal menu */
+        flex-direction: row;
+        background: rgb(255, 255, 255);
+        border-radius: 8px;
+        padding: 20px;
+        margin: 0 auto;
+        font-size: 12px;
+        gap: 15px;
+        width: auto;
+        height: 20px;
+        box-shadow: 0 4px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-item.show {
+        display: flex;
+    }
+
+    .hamburger {
+        position: relative;
+        left: 370px;
+        top: -30px;
+        display: block;
+        /* show hamburger */
+    }
+
+    .nav-icon {
+        display: flex;
+    }
+
+    /* first content */
+    .first-cont {
+        max-width: 100%;
+        flex-direction: column;
+    }
+
+    .first-con {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .first-title {
+        font-size: 35px;
+    }
+
+    .first-btn {
+        margin: 10px auto 0;
+    }
+
+    .first-img {
+
+        width: 80%;
+        margin: 0 auto;
+
+    }
+
+    .circle,
+    .camera {
+        margin-top: 50px;
+        width: 300px;
+        height: auto;
+        padding-left: 20px;
+    }
+
+    .circle {
+        position: relative;
+        top: -350px;
+    }
+}
