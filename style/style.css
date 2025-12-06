@@ -329,7 +329,8 @@ footer {
         flex-direction: column;
     }
 
-    .fade-line {
+    .fade-line,
+    .midl-btn {
         display: none;
     }
 
@@ -339,6 +340,21 @@ footer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
 
+    }
+
+
+
+    .main-content {
+        width: 100%;
+        justify-items: center;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 150px;
+    }
+
+    #main-pera {
+        position: relative;
+        top: 160px;
     }
 
     .nav-title {
