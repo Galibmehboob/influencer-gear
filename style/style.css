@@ -225,16 +225,13 @@
 .last-content {
     display: flex;
     margin: 0 auto;
-    width: 1110px;
+    width: calc(100% - 500px);
     gap: 90px;
     margin-top: 120px;
 }
 
 .last-text {
-
-    width: 610px;
-
-
+    width: 100%;
 }
 
 .last-para {
@@ -267,7 +264,7 @@ footer {
     padding-top: 30px;
     /*     align-items: center; */
     width: 260px;
-    height: 190px;
+    height: auto;
     margin: 0 auto;
     text-align: center
 }
@@ -279,6 +276,7 @@ footer {
     top: 20px;
     left: 60px;
     gap: 15px;
+    width: 120px;
 
 }
 
@@ -329,30 +327,44 @@ footer {
         flex-direction: column;
     }
 
+    .last-content {
+        flex-direction: column;
+    }
+
     .fade-line,
-    .midl-btn,
-    #main-pera {
+    .midl-btn {
         display: none;
     }
 
     .sponsors {
         margin-top: 0;
         width: 100%;
+        height: auto;
         display: grid;
+        margin-bottom: 50px;
         grid-template-columns: repeat(2, 1fr);
 
     }
 
+    .spon-img {
+        margin: 0 auto;
+        padding: 0;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
     .main-con {
-        margin-top: 450px;
+        margin-top: auto
     }
 
     .main-content {
         width: 100%;
+        height: auto;
         justify-items: center;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        margin-top: 250px;
+
     }
 
 
@@ -423,6 +435,8 @@ footer {
 
         width: 80%;
         margin: 0 auto;
+        position: relative;
+        left: 60px;
 
     }
 
@@ -437,5 +451,52 @@ footer {
     .circle {
         position: relative;
         top: -350px;
+    }
+
+    .last-content {
+        width: calc(100% - 30px);
+        margin: 0 auto;
+        height: auto;
+        gap: 0;
+        flex-direction: column;
+
+
+    }
+
+    .last-img {
+        margin: 0 auto;
+        transform: scale(0.7);
+
+    }
+
+    .last-text {
+        /* position: relative;
+        left: -200px;
+        max-width: 100%;
+        margin: 0; */
+        /*  text-align: center;
+        padding: 0px calc(100% - 500px) 50px; */
+
+    }
+
+    .last-text {
+        text-align: center;
+        margin: 0 auto;
+        width: calc(100% - 100px);
+
+    }
+
+    #last-head {
+        font-size: 20px;
+    }
+
+    .last-para {
+        font-size: 14px;
+    }
+
+    .last-btn {
+        width: 100px;
+        font-size: 12px;
+        border-radius: 50%;
     }
 }
