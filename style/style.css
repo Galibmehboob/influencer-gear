@@ -329,6 +329,18 @@ footer {
         flex-direction: column;
     }
 
+    .fade-line {
+        display: none;
+    }
+
+    .sponsors {
+        margin-top: 0;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
     .nav-title {
         font-size: 20px;
         margin-left: 10px;
@@ -354,11 +366,17 @@ footer {
     }
 
     .hamburger {
-        position: relative;
-        left: 370px;
+        /*     position: relative;
+        left: 340px;
         top: -30px;
+        display: block; */
+
+        position: relative;
+        top: -25px;
         display: block;
         /* show hamburger */
+        margin-left: 90%;
+
     }
 
     .nav-icon {
