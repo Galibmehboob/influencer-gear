@@ -330,7 +330,8 @@ footer {
     }
 
     .fade-line,
-    .midl-btn {
+    .midl-btn,
+    #main-pera {
         display: none;
     }
 
@@ -342,20 +343,19 @@ footer {
 
     }
 
-
+    .main-con {
+        margin-top: 450px;
+    }
 
     .main-content {
         width: 100%;
         justify-items: center;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        margin-top: 150px;
+        margin-top: 250px;
     }
 
-    #main-pera {
-        position: relative;
-        top: 160px;
-    }
+
 
     .nav-title {
         font-size: 20px;
